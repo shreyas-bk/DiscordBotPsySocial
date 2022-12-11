@@ -5,7 +5,7 @@ intents.message_content = True
 client = discord.Client(intents = intents)
 
 global control
-control = False
+control = True
 
 global counter
 global phase 
@@ -18,7 +18,7 @@ scoring_results = 'Congrats! You got 4/5 questions correct. Your answers to the 
 end_experiment = 'Done with experiment, thank you for participating!'
 
 lessons = [
-  '''Thank you for participating. Today, you  will be working with this bot. The bot will begin by providing you with a factafter which you should indicate how familiar you are with it. The more you know about the topic associated with a fact, the less likely you will  be to receive additional facts on that topic. You will receive a total of 6 facts, from a list of 100 possible facts. After this there will be 5 MCQ's, randomly chosen from a set of 100 questions. 
+  '''Thank you for participating. Today, you  will be working with this bot. The bot will begin by providing you with a fact, after which you should indicate how familiar you are with it. The more you know about the topic associated with a fact, the less likely you will  be to receive additional facts on that topic. You will receive a total of 6 facts, from a list of 100 possible facts. After this there will be 5 MCQ's, randomly chosen from a set of 100 questions. 
   
   At the height of the Ice Age, much of the world's water was locked up in vast continental ice sheets. As a result, the Bering Sea was hundreds of meters below its current level, and a land bridge, known as Beringia, emerged between Asia and North America. 
   Please type how familiar you were about this fact on a  scale of 1-3.''',
@@ -53,14 +53,14 @@ tests = [
   c - I Have a Dream''',
   
   '''Who was President during Project Mercury?
-  a - John F Kennedy
+  a - John F. Kennedy
   b - Dwight D. Eisenhower
   c - Richard Nixon''',
   
-  '''Which individual was associated with Boston Tea Party?
+  '''Which individual was associated with the Boston Tea Party?
   a - George Washington
   b - Samuel Adams
-  c - Martin Luther King Jr'''
+  c - Martin Luther King Jr.'''
 ]
 
 questions = [
@@ -69,7 +69,7 @@ questions = [
   Analytical.''',
   'Enjoyable.',
   'Polite.',
-  'Likable',
+  'Likable.',
   'Informative.'
 ]
 
